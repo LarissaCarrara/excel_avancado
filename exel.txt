@@ -16,8 +16,8 @@ se for arrastar a celula para copiar é preciso congelar os dados da fórmula f4
 
 =médiase(de onde até onde; divide pelo q)
 
-=MAIOR (matriz, xº maior)
-=MENOR (matrix, xº menor)
+=MAIOR (matriz, nº maior)
+=MENOR (matrix, nº menor)
 
 =hoje() (da para somar com numeros, para vencimento)
 ctrl ; para travar a celula
@@ -28,3 +28,6 @@ inteligencia>conhecimento>informação>dado
 
 =somase(coluna q vai procurar; oq vai prucurar; e quais linhas irá somar)
 
+=truncar() vai deixar o número sempre inteiro
+=arred(nº, qts casas dps da vírgula vc quer) arredondar o número 
+=abs() deixa o numero sempre positivo (modulo)
