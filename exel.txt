@@ -12,7 +12,7 @@ se for arrastar a celula para copiar é preciso congelar os dados da fórmula f4
 
  palavra;  =cont.se(de onde até onde; palavra/numero) //conta a qtd de palavras semelhantes
 
-=se(condição;for verdadeira retoena "palavra"; se(condicao; for verdadeira retorna "palavra3"; se for falta retorna "palavra3"
+=se(condição;for verdadeira retoena "palavra"; se(condicao; for verdadeira retorna "palavra3"; se for falsa retorna "palavra3"
 
 =médiase(de onde até onde; divide pelo q)
 
