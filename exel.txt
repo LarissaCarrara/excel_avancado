@@ -31,3 +31,12 @@ inteligencia>conhecimento>informação>dado
 =truncar() vai deixar o número sempre inteiro
 =arred(nº, qts casas dps da vírgula vc quer) arredondar o número 
 =abs() deixa o numero sempre positivo (modulo)
+
+
+------dashboard
+dados - De text/CSV
+clica na tabela
+inserir - gráfico dinâmicos e seleciona os dados desejados
+copia e cola os gráficos 
+clica no gráfico
+gráfico dinâmico analyze - segmentação de dados e linha do tempo
