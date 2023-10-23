@@ -40,3 +40,47 @@ inserir - gráfico dinâmicos e seleciona os dados desejados
 copia e cola os gráficos 
 clica no gráfico
 gráfico dinâmico analyze - segmentação de dados e linha do tempo
+
+
+--visual basic
+
+
+Sub Registrar()
+    'Define uma variával para armazenar o total
+    Dim Custototal As Double
+    Dim Faturamentototal As Double
+    Dim Ganhototal As Double
+    Dim quantidade As Integer
+    
+    ' Vai para a guia "registro" e pega o valor da célula D16
+    Sheets("negocio").Select
+    Custototal = Range("F22").Value
+    Faturamentototal = Range("F23").Value
+    Ganhototal = Range("F24").Value
+    quantidade = Range("F25").Value
+    
+    If quantidade = 0 Then
+        MsgBox "Sem item para cadastrar"
+    Else
+        ' Vai para a guia "relatorio" insere uma linha em branco e acrescenta os dados
+        Sheets("resultados").Select
+        Rows("4:4").Select
+        Selection.Insert Shift:=xlDown, CopyOrigin:=xlFormatFromLeftOrAbove
+        Selection.Clear
+        ' Hora atual, o total e a palavra Dinheiro
+        Range("A4").Value = Now
+        Range("B4").Value = Custototal
+        Range("C4").Value = Faturamentototal
+        Range("D4").Value = Ganhototal
+        Range("E4").Value = quantidade
+        ' Formata os dados
+        Range("B4").Select
+        Selection.Style = "Currency"
+        Range("C4").Select
+        Selection.Style = "Currency"
+        Range("D4").Select
+        Selection.Style = "Currency"
+        ' Volta a guia "comanda"
+        Sheets("negocio").Select
+    End If
+End Sub
